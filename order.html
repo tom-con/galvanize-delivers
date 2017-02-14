@@ -131,14 +131,14 @@
             <div class="valign left col s2"><i class="small material-icons teal-text text-accent-4">person_pin</i></div>
             <label for="first_name">Full Name</label>
             <div class="right input-field col s10">
-              <input placeholder="Billy Everyteen" id="fullname" type="text" class="validate">
+              <input required autofocus placeholder="Billy Everyteen" id="fullname" type="text" class="validate">
             </div>
           </div>
           <div class="row valign-wrapper">
             <div class="valign left col s2"><i class="small material-icons teal-text text-accent-4">phone</i></div>
             <label for="first_name">Phone</label>
             <div class="right input-field col s10">
-              <input type="tel" placeholder="555-555-5556" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="phonenumber" class="validate">
+              <input required type="tel" placeholder="555-555-5556" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="phonenumber" class="validate">
 
             </div>
           </div>
@@ -146,7 +146,7 @@
             <div class="valign left col s2"><i class="small material-icons teal-text text-accent-4">business</i></div>
             <label for="first_name">Address</label>
             <div class="right input-field col s10">
-              <input placeholder="1776 Freedom Way" id="address" type="text" class="validate">
+              <input required placeholder="1776 Freedom Way" id="address" type="text" class="validate">
             </div>
           </div>
           <input type="submit" value="Place Order" id="order" class="waves-effect waves-light btn">
