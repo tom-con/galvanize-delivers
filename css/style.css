@@ -30,3 +30,7 @@ main {
 .teastitle {
   border-bottom: 1px solid rgb(235, 235, 235);
 }
+
+.orderboarder {
+  border-top: 1px solid rgb(235, 235, 235);  
+}

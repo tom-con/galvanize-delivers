@@ -2,171 +2,181 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-    <title>Galvanize Delivers</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/functions.js">
+
+  </script>
+  <title>Galvanize Delivers</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="nav-wrapper orange darken-4">
-                <a href="index.html" class="brand-logo">Galvanize Delivers</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="order.html">Order Delivery</a></li>
-                </ul>
-            </div>
-        </nav>
+  <header>
+    <nav>
+      <div class="nav-wrapper orange darken-4">
+        <a href="index.html" class="brand-logo">Galvanize Delivers</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="order.html">Order Delivery</a></li>
+        </ul>
+      </div>
+    </nav>
 
-    </header>
-    <main class="container row">
-        <div class="center-align left col s7">
-            <h3>Menu</h3>
-            <div class="row">
-                <div class="col s6">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="img/burger.jpg">
-                            <a id="burga" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons teal accent-4">shopping_basket</i></a>
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title">Burger</span>
-                            <p>$8.99</p>
-                        </div>
-                        <div class="card-action">
-                            <a id="burger" href="#" class="teal-text text-accent-4">Add to Order</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s6">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="img/ice_cream.jpg">
-                            <a id="icecre" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons teal accent-4">shopping_basket</i></a>
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title">Ice Cream</span>
-                            <p>$7.99</p>
-                        </div>
-                        <div class="card-action">
-                            <a id="cream"  href="#" class="teal-text text-accent-4">Add to Order</a>
-                        </div>
-                    </div>
-                </div>
+  </header>
+  <main class="container row">
+    <div class="center-align left col s12 m7">
+      <h3>Menu</h3>
+      <div class="row">
+        <div class="col l6 m6 s12">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/burger.jpg">
+              <a id="burga" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons teal accent-4">shopping_basket</i></a>
             </div>
-            <div class="row">
-                <div class="col s6">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="img/pizza.jpg">
-                            <a id="piza" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons teal accent-4">shopping_basket</i></a>
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title">Pizza</span>
-                            <p>$11.99</p>
-                        </div>
-                        <div class="card-action">
-                            <a id="pizza"  href="#" class="teal-text text-accent-4">Add to Order</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s6">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="img/ribs.jpg">
-                            <a id="ribz" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons teal accent-4">shopping_basket</i></a>
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title">Ribs</span>
-                            <p>$14.99</p>
-                        </div>
-                        <div class="card-action">
-                            <a id="ribs"  href="#" class="teal-text text-accent-4">Add to Order</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="card-content">
+              <span class="card-title">Burger</span>
+              <p>$8.99</p>
             </div>
+            <div class="card-action">
+              <a id="burger" href="#" class="teal-text text-accent-4">Add to Order</a>
+            </div>
+          </div>
         </div>
-        <div class="center-align right col s5 order">
-            <h3>Order</h3>
-            <div class="row">
-                <table class="striped">
-                    <thead>
-                        <tr>
-                            <th data-field="name" class="right-align">Item</th>
-                            <th data-field="price" class="right-align">Price</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tbod">
-
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td>Tax:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Total:</td>
-                            <td></td>
-                        </tr>
-                    </tfoot>
-                </table>
-                <div class="row valign-wrapper">
-                    <div class="valign left col s2"><i class="small material-icons teal-text text-accent-4">person_pin</i></div>
-                    <label for="first_name">First Name</label>
-                    <div class="right input-field col s10">
-
-                        <input placeholder="Billy Everyteen" id="first_name" type="text" class="validate">
-
-                    </div>
-                </div>
-                <div class="row valign-wrapper">
-                    <div class="valign left col s2"><i class="small material-icons teal-text text-accent-4">phone</i></div>
-                    <label for="first_name">Phone</label>
-                    <div class="right input-field col s10">
-                        <input placeholder="(555) 555-5556" id="phone_number" type="text" class="validate">
-
-                    </div>
-                </div>
-                <div class="row valign-wrapper">
-                    <div class="valign left col s2"><i class="small material-icons teal-text text-accent-4">business</i></div>
-                    <label for="first_name">Address</label>
-                    <div class="right input-field col s10">
-                        <input placeholder="1776 Freedom Way" id="address" type="text" class="validate">
-
-                    </div>
-                </div>
-                <a id="order" class="waves-effect waves-light btn">Place Order</a>
+        <div class="col l6 m6 s12">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/ice_cream.jpg">
+              <a id="icecre" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons teal accent-4">shopping_basket</i></a>
             </div>
+            <div class="card-content">
+              <span class="card-title">Ice Cream</span>
+              <p>$7.99</p>
+            </div>
+            <div class="card-action">
+              <a id="cream" href="#" class="teal-text text-accent-4">Add to Order</a>
+            </div>
+          </div>
         </div>
-    </main>
-    <footer class="page-footer orange darken-4">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Galvanize Delivers</h5>
-                    <p class="grey-text text-lighten-4">Fine Dining, Delivered.</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Order Delivery</a></li>
+      </div>
+      <div class="row">
+        <div class="col l6 m6 s12">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/pizza.jpg">
+              <a id="piza" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons teal accent-4">shopping_basket</i></a>
+            </div>
+            <div class="card-content">
+              <span class="card-title">Pizza</span>
+              <p>$11.99</p>
+            </div>
+            <div class="card-action">
+              <a id="pizza" href="#" class="teal-text text-accent-4">Add to Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="col l6 m6 s12">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/ribs.jpg">
+              <a id="ribz" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons teal accent-4">shopping_basket</i></a>
+            </div>
+            <div class="card-content">
+              <span class="card-title">Ribs</span>
+              <p>$14.99</p>
+            </div>
+            <div class="card-action">
+              <a id="ribs" href="#" class="teal-text text-accent-4">Add to Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="center-align right col l5 m5 s12 order">
+      <h3>Order</h3>
+      <div class="row">
+        <table class="striped">
+          <thead>
+            <tr>
+              <th data-field="name" class="">Item</th>
+              <th data-field="price" class="right-align">Price</th>
+            </tr>
+          </thead>
+          <tbody id="tbod">
 
-                    </ul>
-                </div>
+          </tbody>
+          <tfoot>
+            <tr class="orderboarder">
+              <td><strong>Subtotal:</strong></td>
+              <td id="sub" class="right"></td>
+            </tr>
+            <tr class="orderboarder">
+              <td><strong>Tax:</strong></td>
+              <td id="tax" class="right"></td>
+            </tr>
+            <tr class="orderboarder">
+              <td><strong>Total:</strong></td>
+              <td id="total" class="right"></td>
+            </tr>
+          </tfoot>
+        </table>
+        <a class="waves-effect waves-light btn" id="reset">Reset Order</a>
+        <form>
+          <div class="row valign-wrapper">
+            <div class="valign left col s2"><i class="small material-icons teal-text text-accent-4">person_pin</i></div>
+            <label for="first_name">Full Name</label>
+            <div class="right input-field col s10">
+              <input placeholder="Billy Everyteen" id="fullname" type="text" class="validate">
             </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                © 2017 Galvanize Delivers
+          </div>
+          <div class="row valign-wrapper">
+            <div class="valign left col s2"><i class="small material-icons teal-text text-accent-4">phone</i></div>
+            <label for="first_name">Phone</label>
+            <div class="right input-field col s10">
+              <input type="tel" placeholder="555-555-5556" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="phonenumber" class="validate">
+
             </div>
+          </div>
+          <div class="row valign-wrapper">
+            <div class="valign left col s2"><i class="small material-icons teal-text text-accent-4">business</i></div>
+            <label for="first_name">Address</label>
+            <div class="right input-field col s10">
+              <input placeholder="1776 Freedom Way" id="address" type="text" class="validate">
+            </div>
+          </div>
+          <input type="submit" value="Place Order" id="order" class="waves-effect waves-light btn">
+        </form>
+      </div>
+
+    </div>
+  </main>
+  <footer class="page-footer orange darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 m6 s12">
+          <h5 class="white-text">Galvanize Delivers</h5>
+          <p class="grey-text text-lighten-4">Fine Dining, Delivered.</p>
         </div>
-    </footer>
+        <div class="col l4 offset-l2 s12">
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Order Delivery</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2017 Galvanize Delivers
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
