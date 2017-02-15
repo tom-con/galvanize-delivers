@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(){
-
+$(".button-collapse").sideNav();
 var tbody = document.getElementById("tbod");
 var totals = document.getElementById("total");
 var tax = document.getElementById("tax");
