@@ -7,6 +7,7 @@ var subtotal = document.getElementById("sub");
 subtotal.innerText = "$ 0.00";
 tax.innerText = "$ 0.00";
 totals.innerText = "$ 0.00";
+//com
 var burgbutt = document.getElementById("burga");
 var burgtext = document.getElementById("burger");
 var icebutt = document.getElementById("icecre");
